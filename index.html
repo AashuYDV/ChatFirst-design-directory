@@ -120,7 +120,8 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
       /* Desktop ambient glow */
       background-image:
         radial-gradient(ellipse 600px 400px at 30% 50%, rgba(74,71,255,0.12) 0%, transparent 70%),
@@ -130,15 +131,16 @@
     /* ============================================================
        SCREEN SHELL (390px mobile frame)
     ============================================================ */
-    .screen {
-      width: 390px;
+     .screen {
+      width: 100%;
+      max-width: 390px;
       height: 100vh;
       position: relative;
       display: none;
       flex-direction: column;
       overflow: hidden;
-      background: var(--bg-dark);
-    }
+      background: var(--bg-dark);    
+     }
     .screen.active { display: flex; }
 
     /* ============================================================
@@ -1497,7 +1499,8 @@
     #modal-booking.open { display: flex; }
 
     .booking-sheet {
-      width: 390px;
+      width: 100%;
+      max-width: 390px;
       background: #fff;
       border-radius: 22px 22px 0 0;
       max-height: 92vh;
