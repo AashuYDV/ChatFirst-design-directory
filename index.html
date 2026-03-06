@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Leap: Your Career Abroad Starts Here</title>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -120,8 +120,7 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      overflow-x: hidden;
-      overflow-y: auto;
+      overflow: hidden;
       /* Desktop ambient glow */
       background-image:
         radial-gradient(ellipse 600px 400px at 30% 50%, rgba(74,71,255,0.12) 0%, transparent 70%),
@@ -131,16 +130,16 @@
     /* ============================================================
        SCREEN SHELL (390px mobile frame)
     ============================================================ */
-     .screen {
-      width: 100%;
-      max-width: 390px;
+    .screen {
+      width: 390px;
       height: 100vh;
+      height: 100dvh;
       position: relative;
       display: none;
       flex-direction: column;
       overflow: hidden;
-      background: var(--bg-dark);    
-     }
+      background: var(--bg-dark);
+    }
     .screen.active { display: flex; }
 
     /* ============================================================
@@ -160,15 +159,11 @@
 
     /* Hero fold — light cream background matching LeapScholar design language */
     .hero {
-      padding: 0 22px 20px;
+      padding: 0 22px 36px;
       position: relative;
       overflow: hidden;
       flex-shrink: 0;
       background: #F8F7F3;
-
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
     .hero::before {
       content: '';
@@ -358,7 +353,7 @@
     .hero-cta-group {
       position: relative;
       z-index: 1;
-      margin-top: auto;
+      margin-top: 4px;
     }
     .btn-eligibility {
       display: flex;
@@ -1503,8 +1498,7 @@
     #modal-booking.open { display: flex; }
 
     .booking-sheet {
-      width: 100%;
-      max-width: 390px;
+      width: 390px;
       background: #fff;
       border-radius: 22px 22px 0 0;
       max-height: 92vh;
@@ -2483,7 +2477,7 @@
     .madlib-card { background: #fff; border-radius: var(--radius-2xl); padding: 22px 20px 20px; box-shadow: 0 3px 20px rgba(28,34,51,0.10); border: 1px solid var(--neutral-300); margin-bottom: 20px; }
     .madlib-sentence { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15.5px; font-weight: 600; color: var(--primary-1000); line-height: 2.6; }
     .ml-select-wrap { display: inline-block; position: relative; }
-    .ml-select { appearance: none; -webkit-appearance: none; background: rgba(74,71,255,0.07); border: 1.5px solid rgba(74,71,255,0.22); border-radius: 8px; padding: 4px 26px 4px 10px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13.5px; font-weight: 700; color: var(--neutral-700); cursor: pointer; outline: none; transition: all 0.15s; vertical-align: middle; }
+    .ml-select { appearance: none; -webkit-appearance: none; background: rgba(74,71,255,0.07); border: 1.5px solid rgba(74,71,255,0.22); border-radius: 8px; padding: 4px 26px 4px 10px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13.5px; font-weight: 700; color: var(--neutral-700); cursor: pointer; outline: none; transition: all 0.15s; vertical-align: middle; max-width: 140px;}
     .ml-select:focus { border-color: var(--brand-primary); }
     .ml-select.filled { background: var(--brand-primary); border-color: var(--brand-primary); color: #fff; }
     .madlib-preview { background: rgba(74,71,255,0.05); border: 1px solid rgba(74,71,255,0.14); border-radius: var(--radius-xl); padding: 12px 16px; margin-bottom: 22px; display: flex; align-items: flex-start; gap: 9px; min-height: 48px; }
@@ -2562,8 +2556,7 @@
     .dash-m-dot.later { background: var(--neutral-200); color: var(--neutral-500); }
     .dash-milestone.done { color: var(--success); }
     .dash-milestone.next { color: var(--primary-1000); font-weight: 700; }
-    .dash-sticky { padding: 12px 14px 16px; background: #fff; border-top: 1px solid var(--neutral-300); flex-shrink: 0; }
-    .dash-personalise-btn { width: 100%; padding: 16px; background: var(--brand-secondary); color: #fff; border: none; border-radius: var(--radius-2xl); font-family: 'Plus Jakarta Sans',sans-serif; font-size: 15px; font-weight: 800; cursor: pointer; box-shadow: 0 4px 20px rgba(251,116,58,0.38); transition: transform 0.12s; letter-spacing: -0.01em; }
+    .dash-sticky { padding: 12px 14px calc(16px + env(safe-area-inset-bottom)); background: #fff; border-top: 1px solid var(--neutral-300); flex-shrink: 0; }    .dash-personalise-btn { width: 100%; padding: 16px; background: var(--brand-secondary); color: #fff; border: none; border-radius: var(--radius-2xl); font-family: 'Plus Jakarta Sans',sans-serif; font-size: 15px; font-weight: 800; cursor: pointer; box-shadow: 0 4px 20px rgba(251,116,58,0.38); transition: transform 0.12s; letter-spacing: -0.01em; }
     .dash-personalise-btn:active { transform: scale(0.98); }
     .dash-book-cta { text-align: center; padding: 14px 0 2px; }
     .dash-book-btn { background: none; border: 1.5px solid var(--neutral-300); color: var(--brand-primary); font-family: 'Plus Jakarta Sans',sans-serif; font-size: 13px; font-weight: 700; cursor: pointer; padding: 10px 24px; border-radius: var(--r-full); }
@@ -2592,9 +2585,6 @@
     .multisel-chip.sel { background: var(--brand-primary); border-color: var(--brand-primary); color: #fff; }
     .multisel-confirm { width: 100%; padding: 13px; background: var(--brand-primary); color: #fff; border: none; border-radius: var(--radius-2xl); font-family: 'Plus Jakarta Sans',sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; display: none; }
     .multisel-confirm.show { display: block; animation: fadeIn 0.2s ease; }
-    .cr-done-btn {width: 100%;padding: 15px;background: var(--brand-primary);color: #fff;border: none;border-radius: var(--radius-2xl);font-family: 'Plus Jakarta Sans', sans-serif;font-size: 14px;font-weight: 800;cursor: pointer;letter-spacing: -0.01em;box-shadow: 0 4px 20px rgba(74,71,255,0.28);transition: transform 0.12s;margin-top: 4px;}
-    .cr-done-btn:active { transform: scale(0.98); }
-    .cr-done-wrap { padding: 4px 0 8px; width: 100%; }
     @keyframes fadeIn { from{opacity:0} to{opacity:1} }
     .resume-upload-zone { border: 2px dashed rgba(74,71,255,0.28); border-radius: var(--radius-2xl); padding: 20px 16px; text-align: center; background: rgba(74,71,255,0.04); margin: 4px 0; }
     .resume-upload-icon { font-size: 30px; margin-bottom: 8px; }
@@ -3133,7 +3123,7 @@
             <option value="Australia">Australia &#127462;&#127482;</option>
             <option value="Germany">Germany &#127465;&#127466;</option>
           </select>
-        </span>
+        </span><br>
         and want to
         <span class="ml-select-wrap">
           <select class="ml-select" id="ml-goal" onchange="mlFilled('goal', this)">
@@ -4966,20 +4956,11 @@ window.openChatRefine = function() {
   else {
     renqueue([
       {type:'bot', html:'You\'ve completed all 3 rounds! Your plan is fully personalised. \ud83c\udf89'},
-      {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+      {type:'fn',  cb: function() { setTimeout(window.closeChatRefine, 2000); }}
     ]);
   }
 };
-function buildRoundCompleteBtn(isLast) {
-  var label = isLast
-    ? '✅ Plan fully personalised — View my dashboard →'
-    : '✓ View my updated plan →';
-  return '<div class="cr-done-wrap">'
-    + '<button class="cr-done-btn" onclick="window.closeChatRefine()">'
-    + label
-    + '</button>'
-    + '</div>';
-}
+
 window.closeChatRefine = function() {
   var overlay = document.getElementById('chat-refine-overlay');
   if (overlay) overlay.classList.remove('open');
@@ -5062,7 +5043,7 @@ function startRefineLayer2() {
                         if (pill) pill.textContent = 'Round 3 / 3';
                       }},
                       {type:'bot', html:'<strong>Excellent!</strong> Your Visa Score just jumped +' + bonus + ' pts. Round 3 will sharpen your fastest path to ' + (a.country || 'the UK') + '! \ud83d\ude80'},
-                      {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+                      {type:'fn', cb: function() { setTimeout(window.closeChatRefine, 2200); }}
                     ]);
                   }
                 }
@@ -5104,7 +5085,7 @@ function startRefineLayer3() {
                   if (pill) pill.textContent = 'Complete \u2713';
                 }},
                 {type:'bot', html:'<strong>Your plan is fully personalised!</strong> We\'ve found the fastest route for ' + when + ' in ' + (cr._refineCities || 'your chosen cities') + '. \ud83c\udf89'},
-                {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+                {type:'fn', cb: function() { setTimeout(window.closeChatRefine, 2500); }}
               ]);
             }
           )}
@@ -5184,7 +5165,7 @@ function startMastersLayer2() {
                         if (pill) pill.textContent = 'Round 3 / 3';
                       }},
                       {type:'bot', html:'<strong>Profile strengthened!</strong> Admission Score +' + bonus + ' pts. Round 3 locks in your intake and target countries. \ud83c\udf93'},
-                      {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+                      {type:'fn', cb: function() { setTimeout(window.closeChatRefine, 2200); }}
                     ]);
                   }
                 }
@@ -5226,7 +5207,7 @@ function startMastersLayer3() {
                   if (pill) pill.textContent = 'Complete \u2713';
                 }},
                 {type:'bot', html:'<strong>Application plan locked!</strong> We\'ve matched programmes for ' + intake + ' in ' + (cr._mastersCountries || 'your chosen countries') + '. \ud83c\udf89'},
-                {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+                {type:'fn', cb: function() { setTimeout(window.closeChatRefine, 2500); }}
               ]);
             }
           )}
@@ -5271,7 +5252,7 @@ window.simulateResumeUpload = function(isMasters) {
       if (pill) pill.textContent = 'Round 2 / 3';
     }},
     {type:'bot', html:'<strong>Round 1 complete!</strong> Matches now filtered to verified sponsors in your domain. Round 2 will boost your Visa Score. \ud83c\udfaf'},
-    {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+    {type:'fn', cb: function() { setTimeout(window.closeChatRefine, 2000); }}
   ]);
 };
 
@@ -5285,7 +5266,7 @@ window.skipResumeUpload = function(isMasters) {
       if (pill) pill.textContent = 'Round 2 / 3';
     }},
     {type:'bot', html:'No worries! I\'ve refined your plan based on domain and preferences. Round 2 will sharpen your Visa Score. \ud83c\udfaf'},
-    {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+    {type:'fn', cb: function() { setTimeout(window.closeChatRefine, 1800); }}
   ]);
 };
 
