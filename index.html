@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Leap — Your Career Abroad Starts Here</title>
+  <title>Leap: Your Career Abroad Starts Here</title>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     /* ============================================================
@@ -209,7 +209,7 @@
       font-weight: 800;
       line-height: 1.16;
       color: var(--primary-1000);
-      margin-bottom: 16px;
+      margin-bottom: 20px;
       position: relative;
       z-index: 1;
       letter-spacing: -0.02em;
@@ -221,14 +221,14 @@
       font-size: 14.5px;
       line-height: 1.65;
       color: var(--neutral-700);
-      margin-bottom: 22px;
+      margin-bottom: 20px;
       position: relative;
       z-index: 1;
     }
 
     .hero-bullets {
       list-style: none;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
       position: relative;
       z-index: 1;
       display: flex;
@@ -393,7 +393,7 @@
     .hero-stats {
       display: flex;
       gap: 0;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
       position: relative;
       z-index: 1;
       background: #fff;
@@ -426,7 +426,7 @@
 
     /* ── Social proof mini (below CTA, still in fold 1) ── */
     .proof-mini {
-      margin-top: 12px;
+      margin-top: 0;
       position: relative;
       z-index: 1;
     }
@@ -2459,6 +2459,179 @@
       margin-bottom: 4px;
     }
     .jd-visa-sub { font-size: 12px; color: var(--neutral-700); line-height: 1.5; }
+
+    /* ==========================================================
+       V17  SCREEN 6  MAD LIB ONBOARDING
+    ========================================================== */
+    #screen-madlib { background: #F8F7F3; overflow-y: auto; overflow-x: hidden; }
+    #screen-madlib.active { display: block; }
+    #screen-madlib::-webkit-scrollbar { display: none; }
+    .madlib-header { display: flex; align-items: center; justify-content: space-between; padding: 18px 22px 0; }
+    .madlib-back { width: 34px; height: 34px; background: rgba(28,34,51,0.07); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 18px; color: var(--neutral-700); border: none; }
+    .madlib-step-pill { font-size: 11px; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--brand-primary); background: var(--brand-primary-light); padding: 4px 12px; border-radius: var(--r-full); }
+    .madlib-body { padding: 28px 22px 40px; }
+    .madlib-eyebrow { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--brand-secondary); margin-bottom: 14px; }
+    .madlib-heading { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 22px; font-weight: 800; color: var(--primary-1000); line-height: 1.25; margin-bottom: 8px; }
+    .madlib-sub { font-size: 13.5px; color: var(--neutral-700); line-height: 1.6; margin-bottom: 28px; }
+    .madlib-card { background: #fff; border-radius: var(--radius-2xl); padding: 22px 20px 20px; box-shadow: 0 3px 20px rgba(28,34,51,0.10); border: 1px solid var(--neutral-300); margin-bottom: 20px; }
+    .madlib-sentence { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15.5px; font-weight: 600; color: var(--primary-1000); line-height: 2.6; }
+    .ml-select-wrap { display: inline-block; position: relative; }
+    .ml-select { appearance: none; -webkit-appearance: none; background: rgba(74,71,255,0.07); border: 1.5px solid rgba(74,71,255,0.22); border-radius: 8px; padding: 4px 26px 4px 10px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13.5px; font-weight: 700; color: var(--neutral-700); cursor: pointer; outline: none; transition: all 0.15s; vertical-align: middle; }
+    .ml-select:focus { border-color: var(--brand-primary); }
+    .ml-select.filled { background: var(--brand-primary); border-color: var(--brand-primary); color: #fff; }
+    .madlib-preview { background: rgba(74,71,255,0.05); border: 1px solid rgba(74,71,255,0.14); border-radius: var(--radius-xl); padding: 12px 16px; margin-bottom: 22px; display: flex; align-items: flex-start; gap: 9px; min-height: 48px; }
+    .madlib-preview-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+    .madlib-preview-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12.5px; font-weight: 500; color: var(--neutral-700); font-style: italic; line-height: 1.5; }
+    .madlib-submit-btn { width: 100%; padding: 17px 20px; background: var(--brand-secondary); color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; font-weight: 700; border: none; border-radius: var(--radius-4xl); cursor: pointer; box-shadow: 0 4px 20px rgba(251,116,58,0.42); transition: transform 0.14s; letter-spacing: -0.01em; display: flex; align-items: center; justify-content: center; gap: 10px; }
+    .madlib-submit-btn:disabled { background: var(--neutral-400); box-shadow: none; cursor: not-allowed; }
+    .madlib-submit-btn:not(:disabled):active { transform: scale(0.98); }
+    .madlib-btn-arrow { width: 28px; height: 28px; background: rgba(255,255,255,0.22); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+
+    /* ==========================================================
+       V17  SCREEN 7  LOADING / ANALYSIS  (light theme)
+    ========================================================== */
+    #screen-loading { background: #F9FAFB; align-items: center; justify-content: center; }
+    .loading-center { display: flex; flex-direction: column; align-items: center; padding: 0 32px; width: 100%; }
+    .loading-orb { width: 88px; height: 88px; border-radius: 50%; background: linear-gradient(140deg,#EEF2FF 0%,#C7C5FF 100%); display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans',sans-serif; font-size: 30px; font-weight: 800; color: var(--brand-primary); margin-bottom: 28px; animation: orbPulse 2.4s ease-in-out infinite; box-shadow: 0 4px 28px rgba(74,71,255,0.14); }
+    @keyframes orbPulse { 0%,100%{transform:scale(1);box-shadow:0 4px 28px rgba(74,71,255,0.14)} 50%{transform:scale(1.04);box-shadow:0 6px 36px rgba(74,71,255,0.22)} }
+    .loading-title { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 22px; font-weight: 800; color: var(--primary-1000); text-align: center; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .loading-sub { font-size: 13.5px; color: var(--neutral-700); text-align: center; margin-bottom: 36px; }
+    .loading-steps { width: 100%; display: flex; flex-direction: column; gap: 14px; margin-bottom: 32px; }
+    .loading-step { display: flex; align-items: center; gap: 12px; }
+    .lstep-icon { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; flex-shrink: 0; background: var(--neutral-200); border: 1px solid var(--neutral-300); transition: background 0.4s,border-color 0.4s; }
+    .lstep-icon.done { background: rgba(58,158,89,0.15); border-color: rgba(58,158,89,0.35); }
+    .lstep-icon.active { background: var(--brand-primary-light); border-color: rgba(74,71,255,0.35); animation: lstepPulse 1s ease-in-out infinite; }
+    @keyframes lstepPulse { 0%,100%{opacity:1} 50%{opacity:0.55} }
+    .lstep-label { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 13.5px; font-weight: 600; color: var(--neutral-400); transition: color 0.4s; }
+    .lstep-label.active { color: var(--primary-1000); }
+    .lstep-label.done { color: var(--neutral-500); text-decoration: line-through; }
+    .loading-bar-wrap { width: 100%; height: 5px; background: var(--neutral-200); border-radius: 99px; overflow: hidden; }
+    .loading-bar-fill { height: 100%; background: linear-gradient(90deg,var(--brand-primary) 0%,#7B79FF 100%); border-radius: 99px; width: 0; transition: width 0.6s ease; }
+
+    /* ==========================================================
+       V17  SCREEN 8  SF-5 DASHBOARD
+    ========================================================== */
+    #screen-dashboard { background: var(--bg-page); }
+    .dash-topbar { background: var(--primary-1000); padding: 16px 18px 18px; flex-shrink: 0; }
+    .dash-topbar-row { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+    .dash-greeting { flex: 1; }
+    .dash-greeting-name { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 15px; font-weight: 700; color: #fff; }
+    .dash-greeting-sub { font-size: 11px; color: rgba(255,255,255,0.50); margin-top: 2px; }
+    .dash-avatar { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(140deg,var(--brand-secondary),#FF9B65); display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans',sans-serif; font-size: 13px; font-weight: 800; color: #fff; flex-shrink: 0; }
+    .dash-context-row { display: flex; gap: 8px; flex-wrap: wrap; }
+    .dash-ctx-tag { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.09); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--r-full); padding: 5px 12px; font-size: 11px; font-weight: 600; font-family: 'Plus Jakarta Sans',sans-serif; color: rgba(255,255,255,0.80); }
+    .dash-scroll { flex: 1; overflow-y: auto; padding: 12px 14px; display: flex; flex-direction: column; gap: 10px; }
+    .dash-scroll::-webkit-scrollbar { display: none; }
+    .dash-card { background: #fff; border-radius: var(--radius-2xl); padding: 16px; box-shadow: 0 2px 12px rgba(28,34,51,0.08); border: 1px solid var(--neutral-300); }
+    .dash-card-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+    .dash-card-label { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--neutral-500); }
+    .refined-badge { display: none; align-items: center; gap: 4px; background: linear-gradient(135deg,#4A47FF 0%,#7B79FF 100%); color: #fff; font-size: 9.5px; font-weight: 800; font-family: 'Plus Jakarta Sans',sans-serif; padding: 3px 9px; border-radius: var(--r-full); letter-spacing: 0.02em; }
+    .refined-badge.show { display: flex; animation: badgePop 0.4s cubic-bezier(0.34,1.56,0.64,1); }
+    @keyframes badgePop { from{transform:scale(0);opacity:0} to{transform:scale(1);opacity:1} }
+    .dash-visa-row { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+    .dash-visa-score { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 42px; font-weight: 800; color: var(--primary-1000); line-height: 1; flex-shrink: 0; }
+    .dash-visa-score-denom { font-size: 16px; color: var(--neutral-500); font-weight: 600; }
+    .dash-visa-meta { flex: 1; }
+    .dash-visa-label { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 13.5px; font-weight: 700; color: var(--primary-1000); }
+    .dash-visa-sub { font-size: 11.5px; color: var(--neutral-700); margin-top: 3px; line-height: 1.4; }
+    .dash-bar-wrap { height: 7px; background: var(--neutral-200); border-radius: var(--r-full); overflow: hidden; margin-bottom: 6px; }
+    .dash-bar-fill { height: 100%; background: linear-gradient(90deg,var(--brand-primary) 0%,#7B79FF 100%); border-radius: var(--r-full); transition: width 1.2s cubic-bezier(0.22,1,0.36,1); }
+    .dash-bar-legend { display: flex; justify-content: space-between; font-size: 10px; color: var(--neutral-500); }
+    .dash-jobs-count-row { display: flex; align-items: baseline; gap: 6px; margin-bottom: 10px; }
+    .dash-jobs-num { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 36px; font-weight: 800; color: var(--primary-1000); line-height: 1; }
+    .dash-jobs-unit { font-size: 13px; font-weight: 600; color: var(--neutral-700); }
+    .dash-jobs-mini { display: flex; flex-direction: column; gap: 6px; margin-bottom: 8px; }
+    .dash-job-row { display: flex; align-items: center; gap: 9px; background: var(--neutral-100); border-radius: var(--radius-lg); padding: 8px 10px; }
+    .dash-job-logo { width: 28px; height: 28px; border-radius: 7px; background: var(--brand-primary-light); border: 1px solid rgba(74,71,255,0.10); display: flex; align-items: center; justify-content: center; font-size: 13px; flex-shrink: 0; }
+    .dash-job-role { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 12px; font-weight: 700; color: var(--primary-1000); flex: 1; }
+    .dash-job-sal { font-size: 11px; color: var(--success); font-weight: 600; flex-shrink: 0; }
+    .dash-path-title { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 15px; font-weight: 700; color: var(--primary-1000); margin-bottom: 4px; }
+    .dash-path-time { font-size: 12px; color: var(--success); font-weight: 600; margin-bottom: 10px; }
+    .dash-milestones { display: flex; flex-direction: column; gap: 7px; }
+    .dash-milestone { display: flex; align-items: center; gap: 9px; font-size: 12.5px; color: var(--neutral-700); }
+    .dash-m-dot { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0; }
+    .dash-m-dot.done { background: rgba(58,158,89,0.14); }
+    .dash-m-dot.next { background: rgba(74,71,255,0.12); }
+    .dash-m-dot.later { background: var(--neutral-200); color: var(--neutral-500); }
+    .dash-milestone.done { color: var(--success); }
+    .dash-milestone.next { color: var(--primary-1000); font-weight: 700; }
+    .dash-sticky { padding: 12px 14px 16px; background: #fff; border-top: 1px solid var(--neutral-300); flex-shrink: 0; }
+    .dash-personalise-btn { width: 100%; padding: 16px; background: var(--brand-secondary); color: #fff; border: none; border-radius: var(--radius-2xl); font-family: 'Plus Jakarta Sans',sans-serif; font-size: 15px; font-weight: 800; cursor: pointer; box-shadow: 0 4px 20px rgba(251,116,58,0.38); transition: transform 0.12s; letter-spacing: -0.01em; }
+    .dash-personalise-btn:active { transform: scale(0.98); }
+    .dash-book-cta { text-align: center; padding: 14px 0 2px; }
+    .dash-book-btn { background: none; border: 1.5px solid var(--neutral-300); color: var(--brand-primary); font-family: 'Plus Jakarta Sans',sans-serif; font-size: 13px; font-weight: 700; cursor: pointer; padding: 10px 24px; border-radius: var(--r-full); }
+    .see-breakdown-btn { width: 100%; margin-top: 12px; padding: 10px 14px; background: var(--brand-primary-light); color: var(--brand-primary); border: 1.5px solid rgba(74,71,255,0.18); border-radius: var(--radius-xl); font-family: 'Plus Jakarta Sans',sans-serif; font-size: 12.5px; font-weight: 700; cursor: pointer; text-align: left; transition: background 0.15s; }
+    .see-breakdown-btn:active { background: var(--brand-primary-200); }
+    .visa-breakdown { display: none; margin-top: 14px; border-top: 1.5px solid var(--neutral-200); padding-top: 14px; }
+    .visa-breakdown.open { display: block; animation: slideDown 0.28s ease; }
+    @keyframes slideDown { from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
+    .vb-section-title { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--neutral-500); margin-bottom: 10px; }
+    .vb-group { margin-bottom: 12px; }
+    .vb-group-label { font-size: 10px; font-weight: 700; color: var(--brand-primary); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; font-family: 'Plus Jakarta Sans',sans-serif; }
+    .vb-row { display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; background: var(--neutral-100); border-radius: var(--radius-lg); margin-bottom: 4px; gap: 8px; }
+    .vb-row.vb-alt { background: rgba(74,71,255,0.04); border: 1px dashed rgba(74,71,255,0.15); }
+    .vb-criterion { font-size: 12px; color: var(--neutral-700); flex: 1; line-height: 1.4; }
+    .vb-pts { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 12px; font-weight: 800; color: var(--success); flex-shrink: 0; }
+    .vb-pts.pending { color: var(--neutral-500); }
+    .vb-total-row { display: flex; align-items: center; justify-content: space-between; padding: 11px 14px; background: var(--primary-1000); border-radius: var(--radius-xl); margin: 10px 0; }
+    .vb-total-row > div:first-child { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.7); }
+    .vb-total-score { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 17px; font-weight: 800; color: #fff; }
+    .vb-gap-banner { display: flex; align-items: flex-start; gap: 9px; background: rgba(74,71,255,0.07); border: 1px solid rgba(74,71,255,0.18); border-radius: var(--radius-xl); padding: 11px 13px; }
+    .vb-gap-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+    .vb-gap-text { font-size: 12px; color: var(--neutral-700); line-height: 1.5; }
+    .multisel-wrap { padding: 4px 0 8px; }
+    .multisel-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .multisel-chip { padding: 9px 16px; background: var(--neutral-100); border: 1.5px solid var(--neutral-300); border-radius: var(--r-full); font-family: 'Plus Jakarta Sans',sans-serif; font-size: 13px; font-weight: 600; color: var(--neutral-700); cursor: pointer; transition: all 0.15s; user-select: none; -webkit-user-select: none; }
+    .multisel-chip.sel { background: var(--brand-primary); border-color: var(--brand-primary); color: #fff; }
+    .multisel-confirm { width: 100%; padding: 13px; background: var(--brand-primary); color: #fff; border: none; border-radius: var(--radius-2xl); font-family: 'Plus Jakarta Sans',sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; display: none; }
+    .multisel-confirm.show { display: block; animation: fadeIn 0.2s ease; }
+    .cr-done-btn {width: 100%;padding: 15px;background: var(--brand-primary);color: #fff;border: none;border-radius: var(--radius-2xl);font-family: 'Plus Jakarta Sans', sans-serif;font-size: 14px;font-weight: 800;cursor: pointer;letter-spacing: -0.01em;box-shadow: 0 4px 20px rgba(74,71,255,0.28);transition: transform 0.12s;margin-top: 4px;}
+    .cr-done-btn:active { transform: scale(0.98); }
+    .cr-done-wrap { padding: 4px 0 8px; width: 100%; }
+    @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+    .resume-upload-zone { border: 2px dashed rgba(74,71,255,0.28); border-radius: var(--radius-2xl); padding: 20px 16px; text-align: center; background: rgba(74,71,255,0.04); margin: 4px 0; }
+    .resume-upload-icon { font-size: 30px; margin-bottom: 8px; }
+    .resume-upload-title { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 13px; font-weight: 700; color: var(--primary-1000); margin-bottom: 4px; }
+    .resume-upload-sub { font-size: 11.5px; color: var(--neutral-700); margin-bottom: 12px; line-height: 1.5; }
+    .resume-upload-btn { padding: 10px 20px; background: var(--brand-primary); color: #fff; border: none; border-radius: var(--radius-xl); font-family: 'Plus Jakarta Sans',sans-serif; font-size: 13px; font-weight: 700; cursor: pointer; }
+    .resume-skip { display: block; margin-top: 10px; background: none; border: none; color: var(--neutral-500); font-size: 12px; cursor: pointer; font-family: 'Plus Jakarta Sans',sans-serif; }
+    .ra-card { background: #fff; border: 1.5px solid var(--neutral-300); border-radius: var(--radius-2xl); overflow: hidden; margin: 4px 0; }
+    .ra-card-title { background: var(--primary-1000); padding: 10px 14px; font-family: 'Plus Jakarta Sans',sans-serif; font-size: 12px; font-weight: 700; color: #fff; }
+    .ra-field { display: flex; align-items: flex-start; justify-content: space-between; padding: 10px 14px; border-bottom: 1px solid var(--neutral-200); gap: 8px; }
+    .ra-field:last-of-type { border-bottom: none; }
+    .ra-field-left { flex: 1; }
+    .ra-field-label { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--neutral-500); margin-bottom: 2px; }
+    .ra-field-value { font-size: 12.5px; color: var(--primary-1000); font-weight: 600; line-height: 1.4; }
+    .ra-edit-btn { flex-shrink: 0; padding: 4px 11px; background: var(--brand-primary-light); color: var(--brand-primary); border: 1px solid rgba(74,71,255,0.2); border-radius: var(--r-full); font-family: 'Plus Jakarta Sans',sans-serif; font-size: 11px; font-weight: 700; cursor: pointer; }
+    .ra-improve { padding: 10px 14px; background: rgba(217,148,41,0.07); border-top: 1px solid rgba(217,148,41,0.2); }
+    .ra-improve-title { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--warning); margin-bottom: 6px; }
+    .ra-improve-item { font-size: 12px; color: var(--neutral-700); margin-bottom: 4px; padding-left: 14px; position: relative; line-height: 1.5; }
+    .ra-improve-item::before { content: '•'; position: absolute; left: 3px; color: var(--warning); }
+
+    /* ==========================================================
+       V17  CHAT REFINE OVERLAY
+    ========================================================== */
+    #chat-refine-overlay { position: fixed; inset: 0; z-index: 150; background: rgba(16,15,51,0.72); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); display: none; align-items: flex-end; justify-content: center; }
+    #chat-refine-overlay.open { display: flex; }
+    .chat-refine-sheet { width: 390px; height: 86vh; background: var(--bg-page); border-radius: 22px 22px 0 0; display: flex; flex-direction: column; overflow: hidden; animation: sheetUp 0.34s cubic-bezier(0.22,1,0.36,1); }
+    @keyframes sheetDown { from{transform:translateY(0)} to{transform:translateY(100%)} }
+    .cr-handle-row { display: flex; align-items: center; justify-content: center; padding: 12px 16px 0; background: var(--bg-dark); flex-shrink: 0; }
+    .cr-handle { width: 38px; height: 4px; background: rgba(255,255,255,0.22); border-radius: 2px; }
+    .cr-topbar { background: var(--bg-dark); padding: 10px 16px 14px; display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .cr-back { width: 30px; height: 30px; border-radius: 50%; background: rgba(255,255,255,0.10); display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 16px; color: rgba(255,255,255,0.8); flex-shrink: 0; border: none; }
+    .cr-asha-orb { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(140deg,#6B69FF,var(--brand-primary)); display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans',sans-serif; font-size: 14px; font-weight: 800; color: #fff; flex-shrink: 0; }
+    .cr-info { flex: 1; }
+    .cr-name { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 13px; font-weight: 700; color: #fff; }
+    .cr-status { font-size: 10.5px; color: var(--success); }
+    .cr-depth-pill { font-size: 10px; font-weight: 700; font-family: 'Plus Jakarta Sans',sans-serif; background: rgba(74,71,255,0.30); color: rgba(255,255,255,0.85); padding: 3px 10px; border-radius: var(--r-full); }
+    .cr-feed { flex: 1; overflow-y: auto; padding: 14px 14px 10px; display: flex; flex-direction: column; gap: 5px; background: var(--bg-page); }
+    .cr-feed::-webkit-scrollbar { display: none; }
+    .cr-input-zone { flex-shrink: 0; background: #fff; }
+    .cr-complete-banner { background: linear-gradient(135deg,#F4F3FF 0%,#EDF4FF 100%); border-top: 2px solid var(--brand-primary); padding: 16px 18px; text-align: center; flex-shrink: 0; }
+    .cr-complete-title { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 14px; font-weight: 800; color: var(--primary-1000); margin-bottom: 6px; }
+    .cr-complete-sub { font-size: 12px; color: var(--neutral-700); margin-bottom: 12px; line-height: 1.5; }
+    .cr-complete-cta { width: 100%; padding: 14px; background: var(--brand-primary); color: #fff; border: none; border-radius: var(--radius-2xl); font-family: 'Plus Jakarta Sans',sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; box-shadow: var(--sh-primary); }
+
   </style>
 </head>
 <body>
@@ -2495,7 +2668,7 @@
 
     <!-- Sub-copy -->
     <p class="hero-sub">
-      Find out exactly where you stand, and what to do next.
+      Find out exactly where you stand and what to do next.
     </p>
 
     <!-- Feature checklist — tangible tools, not vague promises -->
@@ -2539,7 +2712,7 @@
       <button class="anchor-scroll-btn" onclick="scrollToFold2()">
         See success stories &nbsp;↓
       </button>
-      <p class="trust-line" style="margin-top:10px;">Free &nbsp;·&nbsp; No sign-up required &nbsp;·&nbsp;</p>
+      <p class="trust-line" style="margin-top:10px;">Free &nbsp;&middot;&nbsp; No sign-up required</p>
     </div>
 
   </div><!-- /hero fold 1 -->
@@ -2547,7 +2720,7 @@
   <!-- ══ FOLD 2: SOCIAL PROOF ══ -->
   <div class="proof-fold" id="fold2">
     <p class="proof-heading">Real stories from people like you</p>
-    <p class="proof-sub-head">From india to global, here's how they did it 🚀</p>
+    <p class="proof-sub-head">From India to the world, real stories, real moves.</p>
 
     <!-- Horizontal scrolling testimonials -->
     <div class="testimonials">
@@ -2561,7 +2734,7 @@
           </div>
           <div class="t-stars">★★★★★</div>
         </div>
-        <p class="t-text">"Asha matched me with 3 senior roles in London within minutes. My mentor guided me through the CoS, I got my Skilled Worker Visa in 7 weeks."</p>
+        <p class="t-text">"Asha matched me with 3 senior roles in London within minutes. My mentor guided me through the CoS — I got my Skilled Worker Visa in 7 weeks."</p>
         <span class="t-outcome">✓ £72K · Skilled Worker Visa</span>
       </div>
 
@@ -2587,7 +2760,7 @@
           </div>
           <div class="t-stars">★★★★★</div>
         </div>
-        <p class="t-text">"I almost gave up after two rejections. Leap's visa eligibility score showed me exactly what I was missing, got my Irish Critical Skills permit in 10 weeks."</p>
+        <p class="t-text">"I almost gave up after two rejections. Leap's visa eligibility score showed me exactly what I was missing — got my Irish Critical Skills permit in 10 weeks."</p>
         <span class="t-outcome">✓ £58K · Critical Skills Permit</span>
       </div>
 
@@ -2598,7 +2771,7 @@
 
     <!-- Company logos — continuous marquee ticker -->
     <div class="logos-section">
-      <p class="logos-label">Companies actively hiring sponsored roles right now</p>
+      <p class="logos-label">Verified sponsor employers, hiring now</p>
       <div class="logos-marquee-wrap">
         <div class="logos-marquee">
           <!-- Set 1 -->
@@ -2637,8 +2810,7 @@
         ✨ Build my roadmap &nbsp;→
       </button>
       <p style="text-align:center;font-size:11.5px;color:var(--neutral-500);margin-top:10px;font-family:'Plus Jakarta Sans',sans-serif;">
-        Free &nbsp;·&nbsp; 2 minutes &nbsp;·&nbsp; No account needed
-      </p>
+
     </div>
 
   </div><!-- /proof fold 2 -->
@@ -2653,7 +2825,6 @@
       <a class="land-footer-link">Contact Us</a>
     </div>
     <p class="land-footer-copy">© 2026 Leap Finance Pvt. Ltd. All rights reserved.</p>
-    <p class="land-footer-disclaimer">Not an immigration law firm. We provide career guidance and eligibility information only.</p>
   </div>
 
 </div><!-- /screen-landing -->
@@ -2665,7 +2836,7 @@
 <div class="screen" id="screen-chat">
 
   <div class="chat-bar">
-    <div class="chat-bar-back" onclick="showScreen('landing')">&#8592;</div>
+    <div class="chat-bar-back" onclick="showScreen('dashboard')">&#8592;</div>
     <div class="asha-orb">A</div>
     <div class="chat-bar-info">
       <div class="chat-bar-name">Asha · Leap AI</div>
@@ -2690,7 +2861,7 @@
 
   <div class="jobs-topbar">
     <div class="jobs-topbar-row">
-      <div class="back-circle" onclick="showScreen('chat')">&#8592;</div>
+      <div class="back-circle" onclick="showScreen('dashboard')">&#8592;</div>
       <div class="jobs-topbar-title">Your Job Matches</div>
     </div>
     <div class="match-banner">
@@ -2730,7 +2901,7 @@
   <!-- Top bar -->
   <div class="jobs-topbar" style="padding-bottom:12px">
     <div class="jobs-topbar-row">
-      <div class="back-circle" onclick="showScreen('chat')">&#8592;</div>
+      <div class="back-circle" onclick="showScreen('dashboard')">&#8592;</div>
       <div class="jobs-topbar-title">Your UK Roadmap</div>
     </div>
   </div>
@@ -2801,7 +2972,7 @@
     <div class="pathway-card young">
       <div class="pathway-badge" style="background:rgba(255,186,8,0.12);color:#A16207">📋 ALSO CONSIDER</div>
       <div class="pathway-title">High Potential Individual (HPI) Visa</div>
-      <div class="pathway-desc">If your degree is from a top-50 global university, you can work in the UK for 2 years without a job offer — no sponsor needed.</div>
+      <div class="pathway-desc">If your degree is from a top-50 global university, you can work in the UK for 2 years without a job offer, no sponsor needed.</div>
       <div class="pathway-steps">
         <div class="pstep">○ Check if your university is on the approved list</div>
         <div class="pstep">○ Apply within 5 yrs of graduation</div>
@@ -2890,7 +3061,7 @@
   <!-- Match banner -->
   <div class="jd-match-banner">
     <span class="jd-match-pct">94% match</span>
-    <span class="jd-match-txt">— based on your profile and experience</span>
+    <span class="jd-match-txt">, based on your profile and experience</span>
   </div>
 
   <!-- Scrollable JD body -->
@@ -2905,6 +3076,438 @@
   </div>
 
 </div><!-- /screen-job-detail -->
+
+
+
+
+<!-- =============================================
+     SCREEN 6  MAD LIB ONBOARDING (V17)
+============================================= -->
+<div class="screen" id="screen-madlib">
+  <div class="madlib-header">
+    <button class="madlib-back" onclick="showScreen('landing')">&#8592;</button>
+    <div class="madlib-step-pill">Step 1 of 3</div>
+  </div>
+  <div class="madlib-body">
+    <div class="madlib-eyebrow">Personalise your plan</div>
+    <h2 class="madlib-heading">Complete the sentence below</h2>
+    <p class="madlib-sub">We&#8217;ll use this to build your personalised visa score, job matches, and fastest roadmap.</p>
+    <div class="madlib-card">
+      <div class="madlib-sentence">
+        I&#8217;m a
+        <span class="ml-select-wrap">
+          <select class="ml-select" id="ml-role" onchange="mlFilled('role', this)">
+            <option value="">role &#9660;</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Data Analyst">Data Analyst</option>
+            <option value="Product Manager">Product Manager</option>
+            <option value="Finance Professional">Finance Professional</option>
+            <option value="Healthcare Worker">Healthcare Worker</option>
+            <option value="Marketing Manager">Marketing Manager</option>
+          </select>
+        </span>
+        with
+        <span class="ml-select-wrap">
+          <select class="ml-select" id="ml-exp" onchange="mlFilled('exp', this)">
+            <option value="">experience &#9660;</option>
+            <option value="0&#8211;2 years">0&#8211;2 years</option>
+            <option value="3&#8211;5 years">3&#8211;5 years</option>
+            <option value="6&#8211;10 years">6&#8211;10 years</option>
+            <option value="10+ years">10+ years</option>
+          </select>
+        </span>
+        of experience,<br>
+        planning to move to
+        <span class="ml-select-wrap">
+          <select class="ml-select" id="ml-country" onchange="mlFilled('country', this)">
+            <option value="">country &#9660;</option>
+            <option value="United Kingdom">United Kingdom &#127468;&#127463;</option>
+            <option value="Ireland">Ireland &#127470;&#127466;</option>
+            <option value="Australia">Australia &#127462;&#127482;</option>
+            <option value="Germany">Germany &#127465;&#127466;</option>
+          </select>
+        </span>
+        and want to
+        <span class="ml-select-wrap">
+          <select class="ml-select" id="ml-goal" onchange="mlFilled('goal', this)">
+            <option value="">goal &#9660;</option>
+            <option value="get a job offer">get a job offer &#128188;</option>
+            <option value="pursue a Masters">pursue a Masters &#127891;</option>
+            <option value="explore my options">explore my options &#129517;</option>
+          </select>
+        </span>.
+      </div>
+    </div>
+    <div class="madlib-preview" id="madlib-preview">
+      <span class="madlib-preview-icon">&#10024;</span>
+      <span class="madlib-preview-text" id="madlib-preview-text">Fill in all four blanks to continue&#8230;</span>
+    </div>
+    <button class="madlib-submit-btn" id="madlib-submit-btn" disabled onclick="madlibSubmit()">
+      Build my roadmap
+      <span class="madlib-btn-arrow">&#8594;</span>
+    </button>
+  </div>
+</div><!-- /screen-madlib -->
+
+
+<!-- =============================================
+     SCREEN 7  LOADING / ANALYSIS (V17)
+============================================= -->
+<div class="screen" id="screen-loading">
+  <div class="loading-center">
+    <div class="loading-orb">A</div>
+    <div class="loading-title">Asha is analysing<br>your profile</div>
+    <div class="loading-sub">This takes about 3 seconds&#8230;</div>
+    <div class="loading-steps">
+      <div class="loading-step">
+        <div class="lstep-icon" id="lstep-0">&#128203;</div>
+        <div class="lstep-label" id="lstep-lbl-0">Analysing your profile</div>
+      </div>
+      <div class="loading-step">
+        <div class="lstep-icon" id="lstep-1">&#127698;</div>
+        <div class="lstep-label" id="lstep-lbl-1">Calculating visa score</div>
+      </div>
+      <div class="loading-step">
+        <div class="lstep-icon" id="lstep-2">&#128188;</div>
+        <div class="lstep-label" id="lstep-lbl-2">Finding job matches</div>
+      </div>
+      <div class="loading-step">
+        <div class="lstep-icon" id="lstep-3">&#128506;&#65039;</div>
+        <div class="lstep-label" id="lstep-lbl-3">Generating your roadmap</div>
+      </div>
+    </div>
+    <div class="loading-bar-wrap">
+      <div class="loading-bar-fill" id="loading-bar-fill"></div>
+    </div>
+  </div>
+</div><!-- /screen-loading -->
+
+
+<!-- =============================================
+     SCREEN 8  SF-5 DASHBOARD (V17)
+============================================= -->
+<div class="screen" id="screen-dashboard">
+  <div class="dash-topbar">
+    <div class="dash-topbar-row">
+      <div class="dash-greeting">
+        <div class="dash-greeting-name">Your Career Abroad Plan</div>
+        <div class="dash-greeting-sub">Personalised by Asha &middot; Leap AI</div>
+      </div>
+      <div class="dash-avatar">AY</div>
+    </div>
+    <div class="dash-context-row" id="dash-context-row">
+      <span class="dash-ctx-tag">&#128205; United Kingdom</span>
+      <span class="dash-ctx-tag">&#128188; Job offer route</span>
+    </div>
+  </div>
+
+  <div class="dash-scroll">
+
+    <!-- ============ JOBS PATH CARDS ============ -->
+    <div id="dash-jobs-path">
+
+      <!-- Card 1: Visa Score -->
+      <div class="dash-card">
+        <div class="dash-card-head">
+          <div class="dash-card-label">UK Visa Score</div>
+          <div class="refined-badge" id="visa-refined-badge">&#127919; Refined</div>
+        </div>
+        <div class="dash-visa-row">
+          <div>
+            <span class="dash-visa-score" id="dash-visa-score-num">62</span>
+            <span class="dash-visa-score-denom"> / 70</span>
+          </div>
+          <div class="dash-visa-meta">
+            <div class="dash-visa-label" id="dash-visa-label">Good start! &#127919;</div>
+            <div class="dash-visa-sub" id="dash-visa-sub">You&#8217;re in the <strong>top 35%</strong> for your experience level. A sponsor job offer puts you over the threshold.</div>
+          </div>
+        </div>
+        <div class="dash-bar-wrap">
+          <div class="dash-bar-fill" id="dash-visa-bar" style="width:62%"></div>
+        </div>
+        <div class="dash-bar-legend">
+          <span>0</span>
+          <span>Your score: <strong id="dash-visa-bar-label">62</strong></span>
+          <span>Threshold: 70</span>
+        </div>
+        <button class="see-breakdown-btn" onclick="toggleVisaBreakdown()">See my score breakdown &nbsp;&#8595;</button>
+        <!-- Accordion: UK points breakdown -->
+        <div class="visa-breakdown" id="visa-breakdown">
+          <div class="vb-section-title">UK Skilled Worker Visa &mdash; Points Breakdown</div>
+          <div class="vb-group">
+            <div class="vb-group-label">Mandatory Points (need 50)</div>
+            <div class="vb-row">
+              <div class="vb-criterion">Job offer from approved sponsor</div>
+              <div class="vb-pts" id="vb-job-offer">+20</div>
+            </div>
+            <div class="vb-row">
+              <div class="vb-criterion">Role at appropriate skill level (RQF3+)</div>
+              <div class="vb-pts" id="vb-skill">+20</div>
+            </div>
+            <div class="vb-row">
+              <div class="vb-criterion">English language requirement (B1+)</div>
+              <div class="vb-pts" id="vb-english">+10</div>
+            </div>
+          </div>
+          <div class="vb-group">
+            <div class="vb-group-label">Tradeable Points (need 20 more)</div>
+            <div class="vb-row">
+              <div class="vb-criterion">Salary meets general threshold (&pound;26,200+)</div>
+              <div class="vb-pts" id="vb-salary">+20</div>
+            </div>
+            <div class="vb-row vb-alt">
+              <div class="vb-criterion">PhD relevant to the role</div>
+              <div class="vb-pts pending">+10</div>
+            </div>
+            <div class="vb-row vb-alt">
+              <div class="vb-criterion">Role on shortage occupation list</div>
+              <div class="vb-pts pending">+20</div>
+            </div>
+          </div>
+          <div class="vb-total-row">
+            <div>Your estimated score</div>
+            <div class="vb-total-score" id="vb-total-score">62 / 70</div>
+          </div>
+          <div class="vb-gap-banner" id="vb-gap-banner">
+            <div class="vb-gap-icon">&#9889;</div>
+            <div class="vb-gap-text">A <strong>sponsor job offer</strong> adds +20 pts instantly and puts you over the 70-point threshold.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Job Matches -->
+      <div class="dash-card">
+        <div class="dash-card-head">
+          <div class="dash-card-label">Visa-Sponsored Job Matches</div>
+          <div class="refined-badge" id="jobs-refined-badge">&#127919; Refined</div>
+        </div>
+        <div class="dash-jobs-count-row">
+          <div class="dash-jobs-num" id="dash-jobs-num">30</div>
+          <div class="dash-jobs-unit">roles matched</div>
+        </div>
+        <div class="dash-jobs-mini">
+          <div class="dash-job-row">
+            <div class="dash-job-logo">&#127974;</div>
+            <div class="dash-job-role">Senior Software Eng. &middot; HSBC</div>
+            <div class="dash-job-sal">&pound;72K</div>
+          </div>
+          <div class="dash-job-row">
+            <div class="dash-job-logo">&#128179;</div>
+            <div class="dash-job-role">Full Stack Dev &middot; Barclays</div>
+            <div class="dash-job-sal">&pound;65K</div>
+          </div>
+          <div class="dash-job-row">
+            <div class="dash-job-logo">&#128717;</div>
+            <div class="dash-job-role">Backend Engineer &middot; Amazon</div>
+            <div class="dash-job-sal">&pound;68K</div>
+          </div>
+        </div>
+        <button class="see-all-cta" onclick="showScreen('jobs')">See all <span id="dash-jobs-cta-num">30</span> matching jobs &#8594;</button>
+      </div>
+
+      <!-- Card 3: Fastest Path -->
+      <div class="dash-card">
+        <div class="dash-card-head">
+          <div class="dash-card-label">Your Fastest Path</div>
+          <div class="refined-badge" id="path-refined-badge">&#127919; Refined</div>
+        </div>
+        <div class="dash-path-title" id="dash-path-title">UK Skilled Worker Visa</div>
+        <div class="dash-path-time" id="dash-path-time">&#9889; Estimated 3&#8211;4 months to arrival</div>
+        <div class="dash-milestones">
+          <div class="dash-milestone done">
+            <div class="dash-m-dot done">&#9989;</div>
+            Meet English language requirement
+          </div>
+          <div class="dash-milestone done">
+            <div class="dash-m-dot done">&#9989;</div>
+            Salary above &pound;26,200 threshold
+          </div>
+          <div class="dash-milestone next">
+            <div class="dash-m-dot next">&#9889;</div>
+            <span id="dash-next-step">Secure job offer from licensed sponsor</span>
+          </div>
+          <div class="dash-milestone later">
+            <div class="dash-m-dot later">&#9675;</div>
+            CoS assigned by employer
+          </div>
+          <div class="dash-milestone later">
+            <div class="dash-m-dot later">&#9675;</div>
+            Submit visa application &amp; biometrics
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /dash-jobs-path -->
+
+    <!-- ============ MASTERS PATH CARDS ============ -->
+    <div id="dash-masters-path" style="display:none">
+
+      <!-- Card 1: Admission Score -->
+      <div class="dash-card">
+        <div class="dash-card-head">
+          <div class="dash-card-label">Admission Strength Score</div>
+          <div class="refined-badge" id="adm-refined-badge">&#127919; Refined</div>
+        </div>
+        <div class="dash-visa-row">
+          <div>
+            <span class="dash-visa-score" id="dash-adm-score-num">68</span>
+            <span class="dash-visa-score-denom"> / 100</span>
+          </div>
+          <div class="dash-visa-meta">
+            <div class="dash-visa-label" id="dash-adm-label">Strong profile!</div>
+            <div class="dash-visa-sub" id="dash-adm-sub">You meet the baseline for <strong>14 matched programmes</strong>. Personalise to sharpen your list.</div>
+          </div>
+        </div>
+        <div class="dash-bar-wrap">
+          <div class="dash-bar-fill" id="dash-adm-bar" style="width:68%"></div>
+        </div>
+        <div class="dash-bar-legend">
+          <span>0</span>
+          <span>Your profile: <strong id="dash-adm-bar-label">68</strong></span>
+          <span>Top unis: 80+</span>
+        </div>
+        <button class="see-breakdown-btn" onclick="toggleAdmBreakdown()">See my profile breakdown &nbsp;&#8595;</button>
+        <!-- Accordion: Admission profile breakdown -->
+        <div class="visa-breakdown" id="adm-breakdown">
+          <div class="vb-section-title">Profile Strength &mdash; What Top Universities Look For</div>
+          <div class="vb-group">
+            <div class="vb-group-label">Academic Profile</div>
+            <div class="vb-row">
+              <div class="vb-criterion">Undergraduate GPA / percentage</div>
+              <div class="vb-pts" id="vb-gpa">22 / 30</div>
+            </div>
+            <div class="vb-row">
+              <div class="vb-criterion">English proficiency (IELTS / TOEFL)</div>
+              <div class="vb-pts" id="vb-lang">14 / 20</div>
+            </div>
+            <div class="vb-row">
+              <div class="vb-criterion">GRE / GMAT score</div>
+              <div class="vb-pts" id="vb-gre">8 / 15</div>
+            </div>
+          </div>
+          <div class="vb-group">
+            <div class="vb-group-label">Professional Profile</div>
+            <div class="vb-row">
+              <div class="vb-criterion">Work experience relevance</div>
+              <div class="vb-pts" id="vb-work-exp">16 / 20</div>
+            </div>
+            <div class="vb-row">
+              <div class="vb-criterion">SOP / LOR quality (estimated)</div>
+              <div class="vb-pts pending" id="vb-sop">8 / 15</div>
+            </div>
+          </div>
+          <div class="vb-total-row">
+            <div>Your admission strength</div>
+            <div class="vb-total-score" id="adm-total-score">68 / 100</div>
+          </div>
+          <div class="vb-gap-banner">
+            <div class="vb-gap-icon">&#128221;</div>
+            <div class="vb-gap-text">A strong <strong>SOP + 2 recommendation letters</strong> can boost your profile score by 12&#8211;15 points.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: University Matches -->
+      <div class="dash-card">
+        <div class="dash-card-head">
+          <div class="dash-card-label">University Matches</div>
+          <div class="refined-badge" id="uni-refined-badge">&#127919; Refined</div>
+        </div>
+        <div class="dash-jobs-count-row">
+          <div class="dash-jobs-num" id="dash-uni-num">14</div>
+          <div class="dash-jobs-unit">programmes matched</div>
+        </div>
+        <div class="dash-jobs-mini">
+          <div class="dash-job-row">
+            <div class="dash-job-logo">&#127891;</div>
+            <div class="dash-job-role">MSc Data Science &middot; UCL</div>
+            <div class="dash-job-sal" style="color:var(--success)">88% fit</div>
+          </div>
+          <div class="dash-job-row">
+            <div class="dash-job-logo">&#127891;</div>
+            <div class="dash-job-role">MSc CS &middot; University of Edinburgh</div>
+            <div class="dash-job-sal" style="color:var(--success)">82% fit</div>
+          </div>
+          <div class="dash-job-row">
+            <div class="dash-job-logo">&#127891;</div>
+            <div class="dash-job-role">MBA &middot; University of Manchester</div>
+            <div class="dash-job-sal" style="color:var(--warning)">76% fit</div>
+          </div>
+        </div>
+        <button class="see-all-cta" onclick="showScreen('roadmap')">Explore all <span id="dash-uni-cta-num">14</span> matched programmes &#8594;</button>
+      </div>
+
+      <!-- Card 3: Application Timeline -->
+      <div class="dash-card">
+        <div class="dash-card-head">
+          <div class="dash-card-label">Application Timeline</div>
+          <div class="refined-badge" id="timeline-refined-badge">&#127919; Refined</div>
+        </div>
+        <div class="dash-path-title" id="dash-intake-title">September 2026 Intake</div>
+        <div class="dash-path-time" id="dash-intake-time">&#9889; Applications open &mdash; start now</div>
+        <div class="dash-milestones">
+          <div class="dash-milestone done">
+            <div class="dash-m-dot done">&#9989;</div>
+            Research target universities
+          </div>
+          <div class="dash-milestone next">
+            <div class="dash-m-dot next">&#9889;</div>
+            <span id="dash-adm-next-step">Finalise SOP and get 2 LORs</span>
+          </div>
+          <div class="dash-milestone later">
+            <div class="dash-m-dot later">&#9675;</div>
+            Submit applications (deadline Jan 2026)
+          </div>
+          <div class="dash-milestone later">
+            <div class="dash-m-dot later">&#9675;</div>
+            Receive offer letters (Mar&#8211;Apr 2026)
+          </div>
+          <div class="dash-milestone later">
+            <div class="dash-m-dot later">&#9675;</div>
+            Apply for Student visa
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /dash-masters-path -->
+
+    <!-- Book 1:1 CTA — non-sticky -->
+    <div class="dash-book-cta">
+      <button class="dash-book-btn" onclick="openBooking()">&#128222; Book a 1:1 session with a Leap advisor</button>
+    </div>
+
+    <div style="height:16px"></div>
+  </div><!-- /dash-scroll -->
+
+  <!-- Single sticky CTA -->
+  <div class="dash-sticky">
+    <button class="dash-personalise-btn" onclick="openChatRefine()">&#10024; Personalise with Asha &nbsp;&#8594;</button>
+  </div>
+
+</div><!-- /screen-dashboard -->
+
+
+<!-- =============================================
+     CHAT REFINE OVERLAY (V17)
+============================================= -->
+<div id="chat-refine-overlay">
+  <div class="chat-refine-sheet" id="chat-refine-sheet">
+    <div class="cr-handle-row"><div class="cr-handle"></div></div>
+    <div class="cr-topbar">
+      <button class="cr-back" onclick="closeChatRefine()">&#8592;</button>
+      <div class="cr-asha-orb">A</div>
+      <div class="cr-info">
+        <div class="cr-name">Asha &middot; Leap AI</div>
+        <div class="cr-status">&#9679; Refining your plan</div>
+      </div>
+      <div class="cr-depth-pill" id="cr-depth-pill">Round 1 / 3</div>
+    </div>
+    <div class="cr-feed" id="cr-feed">
+      <div class="date-sep">Refinement session</div>
+    </div>
+    <div class="cr-input-zone" id="cr-input-zone"></div>
+  </div>
+</div><!-- /chat-refine-overlay -->
 
 
 <!-- ═══════════════════════════════════════════
@@ -2994,8 +3597,18 @@
 ────────────────────────────────────────── */
 function showScreen(name) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  const map = { landing: 'screen-landing', chat: 'screen-chat', jobs: 'screen-jobs', roadmap: 'screen-roadmap', jobdetail: 'screen-job-detail' };
-  document.getElementById(map[name]).classList.add('active');
+  var map = {
+    landing:   'screen-landing',
+    chat:      'screen-chat',
+    jobs:      'screen-jobs',
+    roadmap:   'screen-roadmap',
+    jobdetail: 'screen-job-detail',
+    madlib:    'screen-madlib',
+    loading:   'screen-loading',
+    dashboard: 'screen-dashboard'
+  };
+  var id = map[name];
+  if (id) document.getElementById(id).classList.add('active');
 }
 
 function scrollToFold2() {
@@ -3008,15 +3621,9 @@ function scrollToFold2() {
 }
 
 function startChat() {
-  showScreen('chat');
-  // Reset chat state
-  window._answers = {};
-  _queue = [];
-  _busy  = false;
-  const feed = document.getElementById('chat-feed');
-  feed.innerHTML = '<div class="date-sep">Today</div>';
-  document.getElementById('chat-input-zone').innerHTML = '';
-  initFlow();
+  /* V17: route to Mad Lib onboarding */
+  showScreen('madlib');
+  resetMadLib();
 }
 
 /* ──────────────────────────────────────────
@@ -3650,7 +4257,7 @@ function buildVisaCard() {
         </div>
         <div class="visa-meta">
           <div class="visa-label">Good start! 🎯</div>
-          <div class="visa-sub">You have 30 pts — just 40 more to qualify. A job offer unlocks +26 instantly.</div>
+          <div class="visa-sub">You have 30 pts, just 40 more to qualify. A job offer unlocks +26 instantly.</div>
         </div>
       </div>
       <div class="visa-progress">
@@ -3664,7 +4271,7 @@ function buildVisaCard() {
         <span><span class="vleg-dot" style="background:#E4E3F5"></span>Later (26)</span>
       </div>
       <div class="visa-tip">
-        <strong>Next step:</strong> Get a job offer from a UK-licensed sponsor — this unlocks +26 points instantly and puts you over the threshold.
+        <strong>Next step:</strong> Get a job offer from a UK-licensed sponsor, this unlocks +26 points instantly and puts you over the threshold.
       </div>
       <button class="visa-action" onclick="showScreen('roadmap')">See full roadmap →</button>
     </div>`;
@@ -3827,7 +4434,7 @@ function openJobDetail(job) {
         <li>💰 Competitive salary: ${job.s || '£65,000/yr'}</li>
         <li>✈️ Skilled Worker Visa sponsorship provided</li>
         <li>🏥 Private healthcare (BUPA) for you and family</li>
-        <li>🌍 Hybrid working — 2 days in office, 3 remote</li>
+        <li>🌍 Hybrid working, 2 days in office, 3 remote</li>
         <li>📚 £2,000 annual learning & development budget</li>
         <li>🧘 25 days annual leave + bank holidays</li>
       </ul>
@@ -3940,6 +4547,831 @@ _observer.observe(document.getElementById('chat-feed'), { childList: true, subtr
    INIT
 ────────────────────────────────────────── */
 renderJobs(); // Pre-render jobs list
+
+/* ======================================================
+   V17 - GLOBAL STATE
+====================================================== */
+window._v17 = {
+  answers:     { role: '', exp: '', country: '', goal: '' },
+  refineDepth: 0,
+  visaScore:   62,
+  jobCount:    30
+};
+
+/* ======================================================
+   V17 - MAD LIB
+====================================================== */
+var ML_FIELDS = ['role', 'exp', 'country', 'goal'];
+var _mlState  = {};
+
+function resetMadLib() {
+  ML_FIELDS.forEach(function(f) {
+    _mlState[f] = false;
+    var sel = document.getElementById('ml-' + f);
+    if (sel) { sel.value = ''; sel.classList.remove('filled'); }
+  });
+  var pv = document.getElementById('madlib-preview-text');
+  if (pv) pv.textContent = 'Fill in all four blanks to continue…';
+  var sb = document.getElementById('madlib-submit-btn');
+  if (sb) sb.disabled = true;
+}
+
+window.mlFilled = function(field, selectEl) {
+  _mlState[field] = !!selectEl.value;
+  selectEl.classList.toggle('filled', !!selectEl.value);
+  window._v17.answers[field] = selectEl.value;
+  var a = window._v17.answers;
+  var pv = document.getElementById('madlib-preview-text');
+  if (pv) {
+    pv.textContent = '\u201c\u2192 I\u2019m a '
+      + (a.role || '_____') + ' with ' + (a.exp || '_____')
+      + ' of experience, planning to move to ' + (a.country || '_____')
+      + ' and ' + (a.goal || '_____') + '.\u201d';
+  }
+  var allFilled = ML_FIELDS.every(function(f) { return _mlState[f]; });
+  var sb = document.getElementById('madlib-submit-btn');
+  if (sb) sb.disabled = !allFilled;
+};
+
+window.madlibSubmit = function() {
+  var a = window._v17.answers;
+  window._answers = { country: a.country, exp: a.exp,
+                      goal: a.goal, title: a.role, domain: a.role };
+  startLoading();
+};
+
+/* ======================================================
+   V17 - LOADING SCREEN
+====================================================== */
+function startLoading() {
+  showScreen('loading');
+  window._v17.refineDepth = 0;
+  var steps = [{id:0,pct:20},{id:1,pct:48},{id:2,pct:74},{id:3,pct:100}];
+  var idx = 0;
+  var bar = document.getElementById('loading-bar-fill');
+  steps.forEach(function(s) {
+    var ic = document.getElementById('lstep-' + s.id);
+    var lb = document.getElementById('lstep-lbl-' + s.id);
+    if (ic) ic.className = 'lstep-icon';
+    if (lb) lb.className = 'lstep-label';
+  });
+  if (bar) bar.style.width = '0';
+  function runStep() {
+    if (idx >= steps.length) {
+      setTimeout(function() { initDashboard(); showScreen('dashboard'); }, 500);
+      return;
+    }
+    var s = steps[idx];
+    if (idx > 0) {
+      var prev = steps[idx - 1];
+      var pi = document.getElementById('lstep-' + prev.id);
+      var pl = document.getElementById('lstep-lbl-' + prev.id);
+      if (pi) { pi.classList.remove('active'); pi.classList.add('done'); pi.textContent = '\u2705'; }
+      if (pl) { pl.classList.remove('active'); pl.classList.add('done'); }
+    }
+    var ic = document.getElementById('lstep-' + s.id);
+    var lb = document.getElementById('lstep-lbl-' + s.id);
+    if (ic) ic.classList.add('active');
+    if (lb) lb.classList.add('active');
+    if (bar) bar.style.width = s.pct + '%';
+    idx++;
+    setTimeout(runStep, 850);
+  }
+  setTimeout(runStep, 400);
+}
+
+/* ======================================================
+   V17 - DASHBOARD INIT + UPDATE
+====================================================== */
+
+function initDashboard() {
+  var a = window._v17.answers;
+  var isMasters = a.goal && a.goal.indexOf('Masters') > -1;
+
+  /* show/hide path cards */
+  var jp = document.getElementById('dash-jobs-path');
+  var mp = document.getElementById('dash-masters-path');
+  if (jp) jp.style.display = isMasters ? 'none' : '';
+  if (mp) mp.style.display = isMasters ? ''     : 'none';
+
+  /* context row */
+  var ctxRow = document.getElementById('dash-context-row');
+  if (ctxRow && a.country) {
+    ctxRow.innerHTML =
+      '<span class="dash-ctx-tag">\uD83D\uDCCD ' + a.country + '</span>' +
+      '<span class="dash-ctx-tag">' + (isMasters ? '\uD83C\uDF93 Masters route' : '\uD83D\uDCBC Job offer route') + '</span>';
+  }
+
+  if (isMasters) { initMastersDashboard(a); } else { initJobsDashboard(a); }
+
+  /* reset all refined badges */
+  ['visa-refined-badge','jobs-refined-badge','path-refined-badge',
+   'adm-refined-badge','uni-refined-badge','timeline-refined-badge'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.classList.remove('show');
+  });
+}
+
+function initJobsDashboard(a) {
+  var score = 58;
+  if      (a.exp === '3\u20135 years')  score = 62;
+  else if (a.exp === '6\u201310 years') score = 68;
+  else if (a.exp === '10+ years')       score = 74;
+  window._v17.visaScore = score;
+  var jobs = (a.goal && a.goal.indexOf('job') > -1) ? 30 : 28;
+  window._v17.jobCount = jobs;
+
+  var scoreEl = document.getElementById('dash-visa-score-num');
+  var barEl   = document.getElementById('dash-visa-bar');
+  var barLbl  = document.getElementById('dash-visa-bar-label');
+  var labelEl = document.getElementById('dash-visa-label');
+  var subEl   = document.getElementById('dash-visa-sub');
+  var vbTotal = document.getElementById('vb-total-score');
+  if (scoreEl) scoreEl.textContent = score;
+  if (barLbl)  barLbl.textContent  = score;
+  if (vbTotal) vbTotal.textContent = score + ' / 70';
+  if (barEl)   setTimeout(function() { barEl.style.width = score + '%'; }, 120);
+  if (score >= 70) {
+    if (labelEl) labelEl.textContent = 'Visa threshold met! \uD83C\uDF89';
+    if (subEl)   subEl.innerHTML     = 'You meet the 70-point threshold. Secure a sponsor job offer to start your application.';
+    var gb = document.getElementById('vb-gap-banner');
+    if (gb) gb.style.display = 'none';
+  } else {
+    if (labelEl) labelEl.textContent = 'Good start! \uD83C\uDFAF';
+    if (subEl)   subEl.innerHTML     = 'You\u2019re in the <strong>top 35%</strong> for your level. A sponsor job offer puts you over the threshold instantly.';
+  }
+  var jn = document.getElementById('dash-jobs-num');
+  var jc = document.getElementById('dash-jobs-cta-num');
+  if (jn) jn.textContent = jobs;
+  if (jc) jc.textContent = jobs;
+}
+
+function initMastersDashboard(a) {
+  var score = 68;
+  if      (a.exp === '3\u20135 years')  score = 72;
+  else if (a.exp === '6\u201310 years') score = 76;
+  else if (a.exp === '10+ years')       score = 80;
+  window._v17.admScore  = score;
+  window._v17.uniCount  = 14;
+
+  var scoreEl = document.getElementById('dash-adm-score-num');
+  var barEl   = document.getElementById('dash-adm-bar');
+  var barLbl  = document.getElementById('dash-adm-bar-label');
+  var labelEl = document.getElementById('dash-adm-label');
+  var subEl   = document.getElementById('dash-adm-sub');
+  var admTot  = document.getElementById('adm-total-score');
+  if (scoreEl) scoreEl.textContent = score;
+  if (barLbl)  barLbl.textContent  = score;
+  if (admTot)  admTot.textContent  = score + ' / 100';
+  if (barEl)   setTimeout(function() { barEl.style.width = score + '%'; }, 120);
+  if (score >= 75) {
+    if (labelEl) labelEl.textContent = 'Excellent profile!';
+    if (subEl)   subEl.innerHTML     = 'You qualify for <strong>top-tier programmes</strong>. Let\u2019s refine to find your best fit.';
+  } else {
+    if (labelEl) labelEl.textContent = 'Strong profile!';
+    if (subEl)   subEl.innerHTML     = 'You meet the baseline for <strong>14 matched programmes</strong>. Personalise to sharpen your list.';
+  }
+}
+
+function updateDashboard(depth) {
+  var cr = window._v17;
+  var isM = cr.answers.goal && cr.answers.goal.indexOf('Masters') > -1;
+  if (isM) { updateMastersDashboard(depth, cr); } else { updateJobsDashboard(depth, cr); }
+}
+
+function updateJobsDashboard(depth, cr) {
+  if (depth >= 1) {
+    var nj = cr._refineJobCount || Math.min(cr.jobCount + 8, 47);
+    cr.jobCount = nj;
+    var jn = document.getElementById('dash-jobs-num');
+    var jc = document.getElementById('dash-jobs-cta-num');
+    if (jn) jn.textContent = nj;
+    if (jc) jc.textContent = nj;
+    var b1 = document.getElementById('jobs-refined-badge');
+    if (b1) b1.classList.add('show');
+  }
+  if (depth >= 2) {
+    var bonus = cr._refineScoreBonus || 5;
+    var ns    = Math.min(cr.visaScore + bonus, 100);
+    cr.visaScore = ns;
+    var se = document.getElementById('dash-visa-score-num');
+    var be = document.getElementById('dash-visa-bar');
+    var bl = document.getElementById('dash-visa-bar-label');
+    var vt = document.getElementById('vb-total-score');
+    if (se) se.textContent = ns;
+    if (bl) bl.textContent = ns;
+    if (vt) vt.textContent = ns + ' / 70';
+    if (be) setTimeout(function() { be.style.width = ns + '%'; }, 120);
+    var b2 = document.getElementById('visa-refined-badge');
+    if (b2) b2.classList.add('show');
+  }
+  if (depth >= 3) {
+    var ne = document.getElementById('dash-next-step');
+    var te = document.getElementById('dash-path-time');
+    if (ne) ne.textContent = cr._refineNextStep || 'Apply to top sponsors immediately';
+    if (te) te.innerHTML   = cr._refineTime     || '\u26A1 Estimated 2\u20133 months with Leap';
+    var b3 = document.getElementById('path-refined-badge');
+    if (b3) b3.classList.add('show');
+  }
+}
+
+function updateMastersDashboard(depth, cr) {
+  if (depth >= 1) {
+    var nu = cr.uniCount || 14;
+    var un = document.getElementById('dash-uni-num');
+    var uc = document.getElementById('dash-uni-cta-num');
+    if (un) un.textContent = nu;
+    if (uc) uc.textContent = nu;
+    var b1 = document.getElementById('uni-refined-badge');
+    if (b1) b1.classList.add('show');
+  }
+  if (depth >= 2) {
+    var ns  = cr.admScore || 68;
+    var se  = document.getElementById('dash-adm-score-num');
+    var be  = document.getElementById('dash-adm-bar');
+    var bl  = document.getElementById('dash-adm-bar-label');
+    var at  = document.getElementById('adm-total-score');
+    if (se) se.textContent = ns;
+    if (bl) bl.textContent = ns;
+    if (at) at.textContent = ns + ' / 100';
+    if (be) setTimeout(function() { be.style.width = ns + '%'; }, 120);
+    var b2 = document.getElementById('adm-refined-badge');
+    if (b2) b2.classList.add('show');
+  }
+  if (depth >= 3) {
+    var ni = document.getElementById('dash-intake-title');
+    var nt = document.getElementById('dash-intake-time');
+    var ns2 = document.getElementById('dash-adm-next-step');
+    if (ni && cr._mastersIntake)    ni.textContent = cr._mastersIntake + ' Intake';
+    if (nt && cr._mastersIntake)    nt.innerHTML   = '\u26A1 Applications ' + (cr._mastersIntake.indexOf('Jan') > -1 ? 'open now' : 'open from August 2025');
+    if (ns2 && cr._mastersCountries) ns2.textContent = 'Apply to matched programmes in ' + cr._mastersCountries;
+    var b3 = document.getElementById('timeline-refined-badge');
+    if (b3) b3.classList.add('show');
+  }
+}
+
+/* Visa / Admission breakdown accordion toggles */
+window.toggleVisaBreakdown = function() {
+  var el  = document.getElementById('visa-breakdown');
+  var btn = el ? el.previousElementSibling : null;
+  if (!el) return;
+  el.classList.toggle('open');
+  if (btn) btn.textContent = el.classList.contains('open')
+    ? 'Hide score breakdown \u2191' : 'See my score breakdown \u2193';
+};
+
+window.toggleAdmBreakdown = function() {
+  var el  = document.getElementById('adm-breakdown');
+  var btn = el ? el.previousElementSibling : null;
+  if (!el) return;
+  el.classList.toggle('open');
+  if (btn) btn.textContent = el.classList.contains('open')
+    ? 'Hide profile breakdown \u2191' : 'See my profile breakdown \u2193';
+};
+
+/* ======================================================
+   V17 - CHAT REFINE ENGINE
+====================================================== */
+/* ======================================================
+   V17 - CHAT REFINE ENGINE
+====================================================== */
+
+/* Refine-overlay queue & drain (separate from main chat) */
+var _rqueue = [];
+var _rbusy  = false;
+
+function renqueue(items) {
+  _rqueue.push.apply(_rqueue, items);
+  if (!_rbusy) rdrain();
+}
+
+function rdrain() {
+  if (!_rqueue.length) { _rbusy = false; return; }
+  _rbusy = true;
+  var item = _rqueue.shift();
+  var rfeed = document.getElementById('cr-feed');
+  var rzone = document.getElementById('cr-input-zone');
+
+  function rscroll() { if (rfeed) rfeed.scrollTop = rfeed.scrollHeight; }
+
+  function rAddBubble(who, html) {
+    var row = document.createElement('div');
+    row.className = 'mrow ' + who;
+    if (who === 'bot') {
+      row.innerHTML = '<div class="mrow-avatar">A</div><div class="bubble bot">' + html + '</div>';
+    } else {
+      row.innerHTML = '<div class="bubble user">' + html + '</div>';
+    }
+    if (rfeed) rfeed.appendChild(row);
+    rscroll();
+  }
+
+  function rShowTyping() {
+    var t = document.getElementById('r-typing-row');
+    if (t) t.remove();
+    var row = document.createElement('div');
+    row.id = 'r-typing-row';
+    row.className = 'typing-row';
+    row.innerHTML = '<div class="mrow-avatar">A</div><div class="typing-bubble">'
+      + '<div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div></div>';
+    if (rfeed) rfeed.appendChild(row);
+    rscroll();
+  }
+
+  function rKillTyping() {
+    var t = document.getElementById('r-typing-row');
+    if (t) t.remove();
+  }
+
+  function rRenderChips(opts, cb) {
+    if (rzone) rzone.innerHTML = '';
+    rKillTyping();
+    var row = document.createElement('div');
+    row.className = 'opt-row';
+    row.id = 'r-chip-row-live';
+    opts.forEach(function(o) {
+      var btn = document.createElement('button');
+      btn.className = 'opt-card';
+      btn.innerHTML = '<span>' + o + '</span><span class="opt-chevron">\u203a</span>';
+      btn.onclick = function() {
+        btn.classList.add('sel');
+        setTimeout(function() {
+          rAddBubble('user', o);
+          var cr2 = document.getElementById('r-chip-row-live');
+          if (cr2) cr2.remove();
+          if (rzone) rzone.innerHTML = '';
+          cb(o);
+          rdrain();
+        }, 160);
+      };
+      row.appendChild(btn);
+    });
+    if (rfeed) rfeed.appendChild(row);
+    rscroll();
+  }
+
+  if (item.type === 'wait') {
+    setTimeout(rdrain, item.ms);
+  } else if (item.type === 'typing') {
+    rShowTyping();
+    setTimeout(function() { rKillTyping(); rdrain(); }, item.ms || 1100);
+  } else if (item.type === 'bot') {
+    rKillTyping();
+    rAddBubble('bot', item.html || item.text);
+    setTimeout(rdrain, 200);
+  } else if (item.type === 'chips') {
+    rRenderChips(item.opts, item.cb);
+    _rbusy = false;
+  } else if (item.type === 'widget') {
+    rKillTyping();
+    var wrow = document.createElement('div');
+    wrow.className = 'mrow bot';
+    wrow.innerHTML = '<div class="mrow-avatar">A</div>' + item.html;
+    if (rfeed) rfeed.appendChild(wrow);
+    rscroll();
+    _rbusy = false;
+    setTimeout(rdrain, 300);
+  } else if (item.type === 'fn') {
+    item.cb();
+    setTimeout(rdrain, 100);
+  }
+}
+
+/* ==========================================
+   OPEN / CLOSE REFINE OVERLAY
+========================================== */
+window.openChatRefine = function() {
+  var overlay = document.getElementById('chat-refine-overlay');
+  if (!overlay) return;
+  overlay.classList.add('open');
+  var rfeed = document.getElementById('cr-feed');
+  var rzone = document.getElementById('cr-input-zone');
+  if (rfeed) rfeed.innerHTML = '<div class="date-sep">Refinement session</div>';
+  if (rzone) rzone.innerHTML = '';
+  _rqueue = []; _rbusy = false;
+  var depth = window._v17.refineDepth;
+  var pill  = document.getElementById('cr-depth-pill');
+  if (pill) pill.textContent = 'Round ' + (depth + 1) + ' / 3';
+  var isM = window._v17.answers.goal && window._v17.answers.goal.indexOf('Masters') > -1;
+  if (depth === 0)      { isM ? startMastersLayer1() : startRefineLayer1(); }
+  else if (depth === 1) { isM ? startMastersLayer2() : startRefineLayer2(); }
+  else if (depth === 2) { isM ? startMastersLayer3() : startRefineLayer3(); }
+  else {
+    renqueue([
+      {type:'bot', html:'You\'ve completed all 3 rounds! Your plan is fully personalised. \ud83c\udf89'},
+      {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+    ]);
+  }
+};
+function buildRoundCompleteBtn(isLast) {
+  var label = isLast
+    ? '✅ Plan fully personalised — View my dashboard →'
+    : '✓ View my updated plan →';
+  return '<div class="cr-done-wrap">'
+    + '<button class="cr-done-btn" onclick="window.closeChatRefine()">'
+    + label
+    + '</button>'
+    + '</div>';
+}
+window.closeChatRefine = function() {
+  var overlay = document.getElementById('chat-refine-overlay');
+  if (overlay) overlay.classList.remove('open');
+};
+
+/* ==========================================
+   JOBS PATH — Round 1
+   Domain + Salary + Work Arrangement + Resume
+========================================== */
+function startRefineLayer1() {
+  var a  = window._v17.answers;
+  var cr = window._v17;
+  renqueue([
+    {type:'typing', ms:900},
+    {type:'bot',   html:'Hey! I\'m Asha \ud83d\udc4b Let\'s make your job matches razor-sharp. First up \u2014 <strong>which domain are you targeting?</strong>'},
+    {type:'chips', opts:['Software Engineering','Data & Analytics','Product Management','Finance & Accounting','Design (UX/UI)','Marketing & Growth','Operations','Other'],
+      cb: function(d) {
+        cr._refineDomain = d;
+        renqueue([
+          {type:'typing', ms:700},
+          {type:'bot',   html:'Great \u2014 <strong>' + d + '</strong>. What\'s your <strong>expected salary range</strong> in ' + (a.country || 'the UK') + '?'},
+          {type:'chips', opts:['£25k\u201335k','£35k\u201350k','£50k\u201370k','£70k\u201390k','£90k+','No preference'],
+            cb: function(sal) {
+              cr._refineSalary = sal;
+              renqueue([
+                {type:'typing', ms:700},
+                {type:'bot',   html:'Got it. And your preferred <strong>work arrangement</strong>?'},
+                {type:'chips', opts:['Fully Remote','Hybrid (2\u20133 days)','On-site / Office','Flexible'],
+                  cb: function(arr) {
+                    cr._refineArrangement = arr;
+                    renqueue([
+                      {type:'typing', ms:800},
+                      {type:'bot',   html:'Last thing \u2014 upload your <strong>resume</strong> and I\'ll analyse it to boost your matches.'},
+                      {type:'widget', html: buildResumeUploadWidget(false)}
+                    ]);
+                  }
+                }
+              ]);
+            }
+          }
+        ]);
+      }
+    }
+  ]);
+}
+
+/* ==========================================
+   JOBS PATH — Round 2
+   Degree + IELTS + Current Salary
+========================================== */
+function startRefineLayer2() {
+  var a  = window._v17.answers;
+  var cr = window._v17;
+  renqueue([
+    {type:'typing', ms:900},
+    {type:'bot',   html:'Welcome back! Round 2 boosts your <strong>Visa Score</strong>. What\'s your <strong>highest qualification</strong>?'},
+    {type:'chips', opts:['PhD','Masters (Postgrad)','Bachelors / Honours','Diploma / HND','Other'],
+      cb: function(deg) {
+        cr._refineDegree = deg;
+        renqueue([
+          {type:'typing', ms:700},
+          {type:'bot',   html:'Good. Do you have an <strong>IELTS score</strong> (or equivalent)?'},
+          {type:'chips', opts:['Yes \u2014 7.0+','Yes \u2014 6.0\u20136.9','Yes \u2014 below 6.0','Awaiting results','No / not applicable'],
+            cb: function(ielts) {
+              cr._refineIelts = ielts;
+              var bonus = ielts.indexOf('7.0') > -1 ? 12 : ielts.indexOf('6.0') > -1 ? 7 : 3;
+              cr._refineScoreBonus = bonus;
+              renqueue([
+                {type:'typing', ms:700},
+                {type:'bot',   html:'What\'s your <strong>current salary</strong> (or most recent)?'},
+                {type:'chips', opts:['Under \u20b98 LPA','\u20b98\u201315 LPA','\u20b915\u201325 LPA','\u20b925\u201340 LPA','\u20b940 LPA+','I\'m a student'],
+                  cb: function(sal) {
+                    cr._refineCurrentSalary = sal;
+                    renqueue([
+                      {type:'typing', ms:1000},
+                      {type:'fn', cb: function() {
+                        window._v17.refineDepth = 2;
+                        updateDashboard(2);
+                        var pill = document.getElementById('cr-depth-pill');
+                        if (pill) pill.textContent = 'Round 3 / 3';
+                      }},
+                      {type:'bot', html:'<strong>Excellent!</strong> Your Visa Score just jumped +' + bonus + ' pts. Round 3 will sharpen your fastest path to ' + (a.country || 'the UK') + '! \ud83d\ude80'},
+                      {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+                    ]);
+                  }
+                }
+              ]);
+            }
+          }
+        ]);
+      }
+    }
+  ]);
+}
+
+/* ==========================================
+   JOBS PATH — Round 3
+   Timeline + Multi-select Cities
+========================================== */
+function startRefineLayer3() {
+  var a  = window._v17.answers;
+  var cr = window._v17;
+  renqueue([
+    {type:'typing', ms:900},
+    {type:'bot',   html:'Final round \u2014 locking down your <strong>fastest path</strong>. When are you planning to move?'},
+    {type:'chips', opts:['ASAP (within 3 months)','3\u20136 months','6\u201312 months','1\u20132 years','Still exploring'],
+      cb: function(when) {
+        cr._refineTimeline = when;
+        renqueue([
+          {type:'typing', ms:700},
+          {type:'bot',   html:'Which <strong>cities</strong> are you open to? (Pick all that apply)'},
+          {type:'widget', html: buildMultiSelWidget(
+            ['London','Manchester','Edinburgh','Bristol','Birmingham','Leeds','Dublin','Amsterdam'],
+            function(cities) {
+              cr._refineCities = cities.join(', ');
+              renqueue([
+                {type:'typing', ms:1000},
+                {type:'fn', cb: function() {
+                  window._v17.refineDepth = 3;
+                  updateDashboard(3);
+                  var pill = document.getElementById('cr-depth-pill');
+                  if (pill) pill.textContent = 'Complete \u2713';
+                }},
+                {type:'bot', html:'<strong>Your plan is fully personalised!</strong> We\'ve found the fastest route for ' + when + ' in ' + (cr._refineCities || 'your chosen cities') + '. \ud83c\udf89'},
+                {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+              ]);
+            }
+          )}
+        ]);
+      }
+    }
+  ]);
+}
+
+/* ==========================================
+   MASTERS PATH — Round 1
+   Target Degree + Budget + Resume
+========================================== */
+function startMastersLayer1() {
+  var a  = window._v17.answers;
+  var cr = window._v17;
+  renqueue([
+    {type:'typing', ms:900},
+    {type:'bot',   html:'Hi! I\'m Asha \ud83d\udc4b Let\'s find your <strong>best-fit universities</strong>. What degree level are you targeting?'},
+    {type:'chips', opts:['MSc (Taught)','MRes (Research)','MBA','MPhil / PhD','LLM','Other Masters'],
+      cb: function(deg) {
+        cr._mastersDegree = deg;
+        renqueue([
+          {type:'typing', ms:700},
+          {type:'bot',   html:'Got it \u2014 <strong>' + deg + '</strong>. What\'s your <strong>total budget</strong> for tuition + living costs per year?'},
+          {type:'chips', opts:['Under £25k / year','£25k\u201340k / year','£40k\u201360k / year','£60k+ / year','Seeking full scholarship'],
+            cb: function(budget) {
+              cr._mastersBudget = budget;
+              renqueue([
+                {type:'typing', ms:800},
+                {type:'bot',   html:'Upload your <strong>resume or CV</strong> and I\'ll assess your profile strength across target programmes.'},
+                {type:'widget', html: buildResumeUploadWidget(true)}
+              ]);
+            }
+          }
+        ]);
+      }
+    }
+  ]);
+}
+
+/* ==========================================
+   MASTERS PATH — Round 2
+   IELTS + GRE + GPA
+========================================== */
+function startMastersLayer2() {
+  var a  = window._v17.answers;
+  var cr = window._v17;
+  renqueue([
+    {type:'typing', ms:900},
+    {type:'bot',   html:'Round 2 boosts your <strong>Admission Score</strong>. Do you have an <strong>IELTS score</strong>?'},
+    {type:'chips', opts:['Yes \u2014 7.5+','Yes \u2014 7.0\u20137.4','Yes \u2014 6.5\u20136.9','Awaiting results','Taking TOEFL instead','No'],
+      cb: function(ielts) {
+        cr._mastersIelts = ielts;
+        renqueue([
+          {type:'typing', ms:700},
+          {type:'bot',   html:'Do you have a <strong>GRE score</strong>?'},
+          {type:'chips', opts:['Yes \u2014 320+','Yes \u2014 310\u2013319','Yes \u2014 below 310','No (GRE waived)','Planning to take it'],
+            cb: function(gre) {
+              cr._mastersGre = gre;
+              renqueue([
+                {type:'typing', ms:700},
+                {type:'bot',   html:'What was your <strong>undergraduate GPA</strong> (or equivalent)?'},
+                {type:'chips', opts:['First Class / 9+ CGPA','Upper Second / 7\u20138.9 CGPA','Lower Second / 6\u20136.9 CGPA','Pass / below 6','Different grading system'],
+                  cb: function(gpa) {
+                    cr._mastersGpa = gpa;
+                    var iBonus = ielts.indexOf('7.5') > -1 ? 10 : ielts.indexOf('7.0') > -1 ? 7 : 4;
+                    var gBonus = gre.indexOf('320') > -1 ? 8 : gre.indexOf('310') > -1 ? 5 : 2;
+                    var bonus  = iBonus + gBonus;
+                    cr._admScoreBonus = bonus;
+                    renqueue([
+                      {type:'typing', ms:1000},
+                      {type:'fn', cb: function() {
+                        window._v17.refineDepth = 2;
+                        updateDashboard(2);
+                        var pill = document.getElementById('cr-depth-pill');
+                        if (pill) pill.textContent = 'Round 3 / 3';
+                      }},
+                      {type:'bot', html:'<strong>Profile strengthened!</strong> Admission Score +' + bonus + ' pts. Round 3 locks in your intake and target countries. \ud83c\udf93'},
+                      {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+                    ]);
+                  }
+                }
+              ]);
+            }
+          }
+        ]);
+      }
+    }
+  ]);
+}
+
+/* ==========================================
+   MASTERS PATH — Round 3
+   Intake + Multi-select Countries
+========================================== */
+function startMastersLayer3() {
+  var a  = window._v17.answers;
+  var cr = window._v17;
+  renqueue([
+    {type:'typing', ms:900},
+    {type:'bot',   html:'Final round \u2014 locking your <strong>application timeline</strong>. Which <strong>intake</strong> are you targeting?'},
+    {type:'chips', opts:['Sep 2025 (Autumn)','Jan 2026 (Winter)','Sep 2026 (Autumn)','Jan 2027 (Winter)','Flexible'],
+      cb: function(intake) {
+        cr._mastersIntake = intake;
+        renqueue([
+          {type:'typing', ms:700},
+          {type:'bot',   html:'Which <strong>countries</strong> are you open to? (Pick all that apply)'},
+          {type:'widget', html: buildMultiSelWidget(
+            ['United Kingdom','Germany','Netherlands','Canada','Australia','Ireland','USA','Singapore'],
+            function(countries) {
+              cr._mastersCountries = countries.join(', ');
+              renqueue([
+                {type:'typing', ms:1000},
+                {type:'fn', cb: function() {
+                  window._v17.refineDepth = 3;
+                  updateDashboard(3);
+                  var pill = document.getElementById('cr-depth-pill');
+                  if (pill) pill.textContent = 'Complete \u2713';
+                }},
+                {type:'bot', html:'<strong>Application plan locked!</strong> We\'ve matched programmes for ' + intake + ' in ' + (cr._mastersCountries || 'your chosen countries') + '. \ud83c\udf89'},
+                {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+              ]);
+            }
+          )}
+        ]);
+      }
+    }
+  ]);
+}
+
+/* ==========================================
+   RESUME UPLOAD WIDGET
+========================================== */
+function buildResumeUploadWidget(isMasters) {
+  var mf = isMasters ? 'true' : 'false';
+  return '<div class="resume-upload-zone">'
+    + '<div class="resume-upload-icon">\ud83d\udcc4</div>'
+    + '<div class="resume-upload-title">Upload your Resume / CV</div>'
+    + '<div class="resume-upload-sub">PDF, DOCX, or plain text \u00b7 Max 5 MB<br>Your data stays private and is never shared.</div>'
+    + '<label style="display:inline-block">'
+    +   '<input type="file" accept=".pdf,.doc,.docx,.txt" style="display:none" onchange="simulateResumeUpload(' + mf + ')">'
+    +   '<span class="resume-upload-btn">Choose file</span>'
+    + '</label>'
+    + '<button class="resume-skip" onclick="skipResumeUpload(' + mf + ')">Skip for now \u2192</button>'
+    + '</div>';
+}
+
+/* Resume Analysis */
+window.simulateResumeUpload = function(isMasters) {
+  var a      = window._v17.answers;
+  var cr     = window._v17;
+  var domain = cr._refineDomain || a.role || 'Tech';
+  renqueue([
+    {type:'typing', ms:1200},
+    {type:'bot',   html:'Got it! Analysing your resume\u2026'},
+    {type:'typing', ms:2200},
+    {type:'widget', html: buildResumeAnalysisCard(a, domain, a.exp || '2 years', isMasters)},
+    {type:'typing', ms:900},
+    {type:'fn', cb: function() {
+      window._v17.refineDepth = 1;
+      updateDashboard(1);
+      var pill = document.getElementById('cr-depth-pill');
+      if (pill) pill.textContent = 'Round 2 / 3';
+    }},
+    {type:'bot', html:'<strong>Round 1 complete!</strong> Matches now filtered to verified sponsors in your domain. Round 2 will boost your Visa Score. \ud83c\udfaf'},
+    {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+  ]);
+};
+
+window.skipResumeUpload = function(isMasters) {
+  renqueue([
+    {type:'typing', ms:700},
+    {type:'fn', cb: function() {
+      window._v17.refineDepth = 1;
+      updateDashboard(1);
+      var pill = document.getElementById('cr-depth-pill');
+      if (pill) pill.textContent = 'Round 2 / 3';
+    }},
+    {type:'bot', html:'No worries! I\'ve refined your plan based on domain and preferences. Round 2 will sharpen your Visa Score. \ud83c\udfaf'},
+    {type:'widget', html: buildRoundCompleteBtn(window._v17.refineDepth >= 3)}
+  ]);
+};
+
+function buildResumeAnalysisCard(a, domain, exp, isMasters) {
+  var role      = a.role    || 'Software Engineer';
+  var country   = a.country || 'United Kingdom';
+  var expYears  = (exp || '').replace(/\D/g, '') || '2';
+  var improvements = isMasters
+    ? ['Quantify academic projects with measurable outcomes',
+       'Add a clear research interest statement',
+       'List any publications or conference presentations']
+    : ['Add measurable impact to each role (e.g. "grew revenue 25%")',
+       'Include skills that map to UK Skilled Worker visa criteria',
+       'Consider a one-page summary for ATS optimisation'];
+  return '<div class="ra-card">'
+    + '<div class="ra-card-title">\ud83d\udccb Resume Analysis \u2014 Asha AI</div>'
+    + '<div class="ra-field"><div class="ra-field-left"><div class="ra-field-label">Role / Title</div>'
+    +   '<div class="ra-field-value">' + role + '</div></div><button class="ra-edit-btn">Edit</button></div>'
+    + '<div class="ra-field"><div class="ra-field-left"><div class="ra-field-label">Experience</div>'
+    +   '<div class="ra-field-value">' + expYears + ' years of professional experience</div></div><button class="ra-edit-btn">Edit</button></div>'
+    + '<div class="ra-field"><div class="ra-field-left"><div class="ra-field-label">Domain Detected</div>'
+    +   '<div class="ra-field-value">' + domain + '</div></div><button class="ra-edit-btn">Edit</button></div>'
+    + '<div class="ra-field"><div class="ra-field-left"><div class="ra-field-label">Target Country</div>'
+    +   '<div class="ra-field-value">' + country + '</div></div><button class="ra-edit-btn">Edit</button></div>'
+    + '<div class="ra-improve"><div class="ra-improve-title">Areas to Strengthen</div>'
+    + improvements.map(function(i) { return '<div class="ra-improve-item">' + i + '</div>'; }).join('')
+    + '</div></div>';
+}
+
+/* ==========================================
+   MULTI-SELECT WIDGET
+========================================== */
+function buildMultiSelWidget(options, onConfirm) {
+  var id = 'msel_' + Date.now();
+  window['_msel_cb_' + id] = onConfirm;
+  var chips = options.map(function(o) {
+    return '<button class="multisel-chip" onclick="mselToggle(this,\'' + id + '\')" data-val="' + o + '">' + o + '</button>';
+  }).join('');
+  return '<div class="multisel-wrap" id="' + id + '">'
+    + '<div class="multisel-grid">' + chips + '</div>'
+    + '<button class="multisel-confirm" id="msel-btn-' + id + '" onclick="mselConfirm(\'' + id + '\')">Confirm selection \u2192</button>'
+    + '</div>';
+}
+
+window.mselToggle = function(chip, id) {
+  chip.classList.toggle('sel');
+  var wrap = document.getElementById(id);
+  if (!wrap) return;
+  var any = wrap.querySelectorAll('.multisel-chip.sel').length > 0;
+  var btn = document.getElementById('msel-btn-' + id);
+  if (btn) btn.classList.toggle('show', any);
+};
+
+window.mselConfirm = function(id) {
+  var wrap = document.getElementById(id);
+  if (!wrap) return;
+  var selected = [];
+  wrap.querySelectorAll('.multisel-chip.sel').forEach(function(ch) {
+    selected.push(ch.getAttribute('data-val'));
+  });
+  if (!selected.length) return;
+  wrap.style.opacity = '0.5';
+  wrap.style.pointerEvents = 'none';
+  var rfeed = document.getElementById('cr-feed');
+  if (rfeed) {
+    var row = document.createElement('div');
+    row.className = 'mrow user';
+    row.innerHTML = '<div class="bubble user">' + selected.join(', ') + '</div>';
+    rfeed.appendChild(row);
+    rfeed.scrollTop = rfeed.scrollHeight;
+  }
+  var cb = window['_msel_cb_' + id];
+  if (typeof cb === 'function') { cb(selected); }
+  rdrain();
+};
+
+/* Open Full Chat from Dashboard */
+window.openFullChat = function() {
+  _queue = []; _busy = false;
+  var f = document.getElementById('chat-feed');
+  if (f) f.innerHTML = '<div class="date-sep">Today</div>';
+  var z = document.getElementById('chat-input-zone');
+  if (z) z.innerHTML = '';
+  window._answers = window._answers || {};
+  var a = window._v17.answers;
+  if (a.country) window._answers.country = a.country;
+  if (a.exp)     window._answers.exp     = a.exp;
+  if (a.goal)    window._answers.goal    = a.goal.indexOf('Masters') > -1
+    ? 'Pursue a Masters' : 'Get a job abroad';
+  showScreen('chat');
+  initFlow();
+};
+
 </script>
 </body>
 </html>
