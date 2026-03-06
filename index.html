@@ -160,11 +160,15 @@
 
     /* Hero fold — light cream background matching LeapScholar design language */
     .hero {
-      padding: 0 22px 36px;
+      padding: 0 22px 20px;
       position: relative;
       overflow: hidden;
       flex-shrink: 0;
       background: #F8F7F3;
+
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     .hero::before {
       content: '';
@@ -354,7 +358,7 @@
     .hero-cta-group {
       position: relative;
       z-index: 1;
-      margin-top: 4px;
+      margin-top: auto;
     }
     .btn-eligibility {
       display: flex;
